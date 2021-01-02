@@ -2,7 +2,7 @@
 const questions = [
 	/*Hoofdvragen*/
 		/*0*/[[0,0],0," "],
-		/*1*/[[0,2],[2,1,2,3], "Is het een plantje met bladeren en zit het vast in de grond?"],
+		/*1*/[[0,2],[1,1], "Is het een plantje met bladeren en zit het vast in de grond?"],
 		/*2*/[[0,3],[0,8], "Heeft de plant bloemen?"],
 		/*3*/[[0,18],[0,4], "Zijn de bloemen blauw of paars?"],
 		/*4*/[[0,20], [0,5], "Zijn de bloemen helemaal geel?"],
