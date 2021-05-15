@@ -5,9 +5,10 @@
 
 .logo {
   height:auto;
-  width: 90%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
+  margin: auto;
   max-width: 300px;
 }
 
@@ -25,21 +26,29 @@
   float: center;
   margin: auto;
   width:50%;
-  min-width: 550px;
   background-color: red;
+  font-size: 1.5em;
+  border:solid;
 }
 
 .card-body{
-  font-size:20px;
-  text-align: center;
-  margin-left: 10%;
-  margin-right:10%;
+  margin-left: 5%;
+  margin-right:5%;
   margin-top:5%;
   margin-bottom: 5%;
 }
 
+.result-header{
+  padding: 1em;
+  border-bottom:solid #9e9999 1px;
+}
+.result-footer{
+  padding: 5px;
+  text-align:left;
+  border-top: solid #9e9999 1px;
+}
 .question{
-  font-size:20px;
+  font-size: 1em;
   margin-bottom: 5%;
 }
 
@@ -50,6 +59,7 @@
 .NavBar{
   text-align:right;
 }
+
 @media only screen and (max-width: 900px) {
   .card{
     width: 80%;
@@ -72,7 +82,7 @@
 }
 
 .plantinfo{
-  text-align:  ;
+  text-align:left;
 }
 
 /*Footer*/
@@ -94,20 +104,19 @@ a:hover {
 }
 
 .fa {
-  font-size: 14px;
-  margin: 5px;
+  font-size: 1em;
   text-align: center;
   text-decoration: none;
   background: #ff6e37;
   color:white;
   border: none;
+  padding: 10px;
+  margin:5px;
 }
-
-.fa.JN{
-  padding:10px;
-  border-radius: 5px;
+.btn-group{
+  border-radius: 10px;
+  padding:5px;
 }
-
 .fa:hover{
   opacity: 0.5;
   color:white;
@@ -116,15 +125,10 @@ a:hover {
 
 .fa.NW{
   background-color: #9e9999;
-  padding:10px;
-
-  border-radius: 5px;
 }
 
 .fa.NB{ 
-  border-radius: 50%;
   background-color: #9e9999;
-  font-size: 20px;
 }
 .center{
   text-align: center;
@@ -136,3 +140,10 @@ a:hover {
   font-size: 30px;
   margin: 5px;
 }
+
+.message {
+  text-align: left;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+

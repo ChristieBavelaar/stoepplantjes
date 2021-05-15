@@ -1,23 +1,32 @@
+// Lege component dat wordt gebruikt om subcomponenten te laden
 import React, {useState} from 'react';
 
-//import components
+// Import components
 import {Row, Col} from 'react-bootstrap';
 import Determine from './Determine';
 import Result from './Result';
 import Options from './Options';
 import NotFound from './NotFound';
 import Found from './Found';
-import Back from './Back';
 
+// Array bewaart de id's van benantwoordden vragen.
 let history = [];
 
 function Content(){
+	// Huidige status van Conten
 	const [id, setId] = useState([0,1]);
+	
+	// Component dat door content wordt geladen
 	let content;
 	
+	// Sla huidig id op
 	history.push(id)
+
+	// Log history
 	console.log("current history: "+ history)
 	console.log('current id: ' + id)
+
+	// Bepaal juiste component om te laden
 	switch(id[0]){
 		case 0:
 			console.log("determine");
@@ -41,6 +50,7 @@ function Content(){
 			content = <Found id={id}/>
 			break;
 		case 5:
+			// Delete de huidige state van de history, set de huidige state op vorige state
 			console.log("Terug");
 			history.pop();	
 			history.pop();
@@ -50,18 +60,14 @@ function Content(){
 			console.log("Error no correct table: " + id);
 
 	}
-	/*if(id>=0){
-		content = <Determine id={id} setId={setId}/>
-	}else{
-		content = <Result id={Math.abs(id)}/>
-	}*/
+	// Return JSX
 	return (
 		<Row className="container-fluid">
-			<Col md={4} lg={2}> </Col>
-			<Col className ="card" md={6} lg={8}>
+			<Col lg={2}> </Col>
+			<Col className ="card" md={12} lg={8}>
 				{content}
 			</Col>
-			<Col md={3} lg={2}></Col>
+			<Col lg={2}></Col>
 		</Row>
 	);
 }

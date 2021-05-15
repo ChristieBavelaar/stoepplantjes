@@ -1,4 +1,15 @@
-/* [id ja, id nee, "vraag"] */
+/* 	
+	Array met daarin alle vragen en hun vervolgstappen. Elk element van de array bestaat uit: 
+		[id ja, id nee, "vraag"] 
+	De id ja en id nee geven de vervolgstappen aan bij het beantwoorden van een vraag met ja of nee. Deze zijn ook een array met de volgende elementen:
+		[k, i]
+		k geeft de vervolgstap aan waarbij
+		0 	Vraag
+		1	Resultaat
+		2	Meerder resultaten
+		3	Geen resultaat
+		i is optioneel en geeft de index van de volgende vraag of resultat
+*/
 const questions = [
 	/*Hoofdvragen*/
 		/*0*/[[0,0],0," "],
@@ -22,17 +33,17 @@ const questions = [
 	/*Subvragen*/
 		/*3*/
 			/*18-a*/[[1,2], [0,19], "Bloem met helpje (bolle 'bovenlip') en onderlip (lipbloemige), eerder paars dan blauw. Stengel vierkantig, vaak kruipend. Niervormige bladeren staan twee aan twee tegenover elkaar?"],
-			/*19-b*/[[1,3], [1,4], "Bloemen piepklein (2-3 mm), verstopt tussen kleinee bladeren en helderblauw?"],
+			/*19-b*/[[1,3], [1,4], "Bloemen piepklein (2-3 mm), verstopt tussen kleine bladeren en helderblauw?"],
 		/*4*/
 			/*20-a*/[[1,5], [0,21], "Zijn de bladeren klein en schubachtig afgeplat, eirond en vlezig?"],
 			/*21-b*/[[0,22], [0,25], "Heeft de stengel of het blad wit of oranje melksap? (komt tevoorschijn bij afbreken stukje stengel (of blad)"],
 			/*22-c*/[[1,6], [0,23], "Is het melksap oranje?"],
 			/*23-d*/[[1,7], [0,24], "Is het melksap wit en heeft de bloeistengel bladeren?"],
 			/*24-e*/[[1,8], [0,25], "Wit melksap en alle bladeren in een rozet op de grond?"],
-			/*25-f*/[[1,9], [0,26], "Lijkt het blad op een klavertje en is het roodbruin of rood aangelopen?"],
-			/*26-g*/[[1,10], [0,27], "Is het blad handvormig samengesteld met 5-7 omgekeerde eironde deelblaadjes?"],
-			/*27-h*/[[1,11], [0,28], "Hebben de bloemen 4 kroonbladen en staan de lijnvormige vruchtjes stijf tegen de stengel omhoog?"],
-			/*28-i*/[[2, 26, 27, 28], [3], "Bloemen in een hoofdje bij elkaar (samengesteldbloemige)"],
+			/*25-f*/[[1,10], [0,26], "Lijkt het blad op een klavertje en is het roodbruin of rood aangelopen?"],
+			/*26-g*/[[1,11], [0,27], "Is het blad handvormig samengesteld met 5-7 omgekeerde eironde deelblaadjes?"],
+			/*27-h*/[[1,54], [0,28], "Hebben de bloemen 4 kroonbladen en staan de lijnvormige vruchtjes stijf tegen de stengel omhoog?"],
+			/*28-i*/[[2, 26, 27, 28, 51, 53], [3], "Bloemen in een hoofdje bij elkaar (samengesteldbloemige)"],
 		/*5*/
 			/*29-a*/[[1,14], [0,30], "Bladeren groot en met stekels die prikken?"],
 			/*30-b*/[[1,15], [0,31], "Hebben de bloemen een helm en een lip, en zijn de bladeren eirond en gekarteld, eventueel de bovenste bladen wat paars aangelopen?"],
@@ -74,5 +85,7 @@ const questions = [
 		/*14*/
 			/*60-a*/[[2,2,4], [0,61], "Staan de bladeren langs de stengel en zijn ze klein en vlezig?"],
 			/*61-b*/[[2, 0,9], [3], "Bladeren rond in omtrek en het lijkt of de bladstelen vanuit 1 punt in de grond komen."]	
-]
+
+
+		]
 export default questions;

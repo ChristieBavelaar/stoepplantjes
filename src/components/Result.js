@@ -1,43 +1,58 @@
+// Laat een stoepplantjes resultaat zien
 import React from 'react';
+
+// import data
 import results from '../data/results' ;
+
+// import styling
 import {Row, Col} from 'react-bootstrap';
+
 function Result({id, setId}){
+	// Sla index van huidige vraag op, maakt de code beter leesbaar
 	const currentResult = id[1];
+
 	function jaHandler(){
 		console.log(currentResult);
+
+		// Set state op id: [Found, index van resultaat]
 		setId([4, currentResult]);
 	}
 	function neeHandler(){
+		// Set state van Content op NotFound
 		setId([3]);
 	}
-
+	
+	// Return JSX
 	return(
 		<div>
-			<div className = "card-header">
+			<div className = "result-header">
 				U heeft mogelijk <b>{results[currentResult][0]}</b> gevonden... <br/>
-				Check de kenmerken om te kijken of dit inderdaad de plant is die u heeft gevonden.	
 			</div>
 			<div className="card-body"> 
 			<Row>
-				<Col md={2} sm={0}> </Col>
-				<Col sm={4} >
-					<b>{results[currentResult][0]}</b> ({results[currentResult][1]}) 
+				
+				<Col lg={6} md={6} sm={12} >
 					<div className = "plantinfo">
-						<br/>
+					
+					<b>{results[currentResult][0]}</b> ({results[currentResult][1]}) 
+					
+						<br/><br/>
 						{results[currentResult][2]}
 						<br/> <br/>
-					</div>
+					
 					Is dit het plantje dat u gevonden heeft?
+					</div>
 					<br/>
 					<div className="btn-group">
 						<button className="fa" onClick={jaHandler}> JA </button>
 						<button className="fa" onClick={neeHandler}>NEE </button>
 					</div>
+					<br/><br/>
 				</Col>
-				<Col md={4} sm={8}>
+				<Col lg={6} md={6} sm={12}>
 					<img src={require('../images/result/' + currentResult + '.jpeg').default} alt={require('../images/LogoHortus.png')} width="100%"></img>
 				</Col>
-				<Col md={2} sm={0}> </Col>
+				
 			</Row>
 		</div>
 		</div>

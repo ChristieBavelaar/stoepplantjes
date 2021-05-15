@@ -1,11 +1,15 @@
+/*
+	Array waarin alle resultaten zijn opgeslagen. De array heeft de volgende elementen:
+	["Nederlandse naam van de plant", "Latijnse naam van de plant", "Beschrijving van de plant"]
+*/
 const results = [
-	/*0*/["Kleine ooievaarsbek", "(Geranium pusillum", "Bladeren rond, zacht, fijn ingesneden; stengel, bladstelen en bloemstelen hebben alleen korte haren. Vrucht in de vorm van een ooievaarsbek die op een recht steeltje staat."],
+	/*0*/["Kleine ooievaarsbek", "Geranium pusillum", "Bladeren rond, zacht, fijn ingesneden; stengel, bladstelen en bloemstelen hebben alleen korte haren. Vrucht in de vorm van een ooievaarsbek die op een recht steeltje staat."],
 	/*1*/["Mos", "Bryophyta", "Plantje wortelt niet"],
-	/*2*/["Hondsdraf", "Glechoma hedracea", ""],
-	/*3*/["Veldereprijs", "Veronica arvensis", ""],
+	/*2*/["Hondsdraf", "Glechoma hedracea", "Bloem met helmpje (bolle 'bovenlip') en onderlip (lipbloemige), eerder paars dan blauw. Stengel vierkantig, vaak kruipend. Niervormige bladeren staan twee aan twee tegenover elkaar."],
+	/*3*/["Veldereprijs", "Veronica arvensis", "Bloem pieplklein (2-3 mm), verstopt tussen kleine bladeren en helderblauw."],
 	/*4*/["Klimopereprijs", "Veronica hederifolia", "Bloemen klein (4-8 mm), lichtpaars, goedzichtbaar, met iets donkerder paarse nerven?"],
 	/*5*/["Muurpeper", "Sedum acre", "Vetplantje, vaak meerdere opstijgende stengels bij elkaar als een kussentje. Bladeren 3-6mm."],
-	/*6*/["Stinkende gouwe", "Cheldionium majus", "Plant met oranje melksap, bossig vertakt. Bloemen in losse schermen met 2-8 bloemen. Bloem met 4 kroonbladen. Veerdelige bladeren met gekartelde bladslippen."],
+	/*6*/["Stinkende gouwe", "Chelidonium majus", "Plant met oranje melksap, bossig vertakt. Bloemen in losse schermen met 2-8 bloemen. Bloem met 4 kroonbladen. Veerdelige bladeren met gekartelde bladslippen."],
 	/*7*/["Melkdistel", " ", ""],
 	/*8*/["Paardenbloem", "Taraxacum officinale", "Bloemen in een hoofdje bij elkaar (samengesteldbloemige), stengel, indien aanwezig, zonder bladeren."],
 	/*9*/["zachte ooievaarsbek","Geranium molle","Bladeren rond, zacht, fijn ingesneden; stengel, bladstelen en bloemstelen hebben zowel korte als lange haren. Vrucht in de vorm van een ooievaarsbek die op een recht steeltje staat."],
@@ -51,9 +55,12 @@ const results = [
 	/*49*/["Heermoes", "Equisetum arvense", "Stakerig plantje met geribde stengels en kringen van zijtakjes. Bloeistengels zonder zijtakjes en met een lichtroze tot soms 'aangebrand' kegeltje erbovenop. Plant kruipt onder de stenen door, meerder uitlopers."],
 	/*50*/["Tuinwolfsmelk", "Euphorbia plebus", "Plant met melksap en geelgroene bloemen. In de bloemen zijn 4 halve maantjes zichtbaar."],
 	/*51*/["Gewoon varkensgras", "Polygonum aviculare", "Plant vaak met liggende stengels. Bloemetjes groen tot roze met een witte rand, klein. Vliezige tuitjes. Plant vormt vaak matten met zich uit 1 punt vertakkende stengels."],
-	/*52*/["Muursla", "Mycelis muralis", "Indien aanwezig, stengel met bladeren."]
+	/*52*/["Muursla", "Mycelis muralis", "Indien aanwezig, stengel met bladeren."],
+	/*53*/["Klein streepzaad","Crepsis capillaris", "Stengels vertak. Bloemhoofdje met veel meer dan 5 linkbloemen, de buitenste vaak aan de onderzijde roodachtig. Bladeren langwerig, getand tot veerspletig. Stengelbladeren met spitse oortjes de stengel omvattend. "],
+	/*54*/["Gewone raket","Sisymbrium officinale", ""]
 
 
+	
 ]
 
 export default results
